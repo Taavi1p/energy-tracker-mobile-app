@@ -25,19 +25,34 @@ export default function TabLayout() {
           },
           default: {},
         }),
-      }}>
+      }}
+    >
       <Tabs.Screen
-        name="index"
+        name="nuclear"
         options={{
-          title: 'Home',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
+          title: 'Nuclear',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="atom" color={color} />,
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name="wind"
         options={{
-          title: 'Explore',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
+          title: 'Wind',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="wind" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="solar"
+        options={{
+          title: 'Solar',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="sun.max.fill" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="hydro"
+        options={{
+          title: 'Hydro',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="drop.fill" color={color} />,
         }}
       />
     </Tabs>
